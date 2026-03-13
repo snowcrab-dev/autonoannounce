@@ -18,5 +18,14 @@ cd autonoannounce
 - Add docs under `docs/`
 - Keep scripts in `scripts/`
 
+## Current plan
+- See `docs/PLAN.md` for v0.1 scope and DoD.
+
+## Quickstart (local-tts-queue)
+```bash
+cd skills/local-tts-queue
+./scripts/benchmark-local-tts-queue.sh 5
+```
+
 ## License
 MIT
