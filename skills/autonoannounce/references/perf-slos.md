@@ -14,7 +14,7 @@
 ## Measurement method
 Use:
 ```bash
-/home/brad/.openclaw/workspace/skills/autonoannounce/scripts/benchmark-autonoannounce.sh
+skills/autonoannounce/scripts/benchmark-autonoannounce.sh
 ```
 
 Collect:

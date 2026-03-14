@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="/home/brad/.openclaw/workspace"
+ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
 ENQUEUE="$ROOT/scripts/speak-local-queued.sh"
 STATUS="$ROOT/scripts/tts-queue-status.sh"
 

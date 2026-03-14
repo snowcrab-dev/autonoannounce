@@ -34,13 +34,13 @@ Interpretation:
 
 ## 3) Validate queue plumbing
 ```bash
-/home/brad/.openclaw/workspace/scripts/tts-queue-status.sh
+scripts/tts-queue-status.sh
 ```
 Confirm queue file, lock file, and log path exist and are writable.
 
 ## 4) Smoke test end-to-end
 ```bash
-/home/brad/.openclaw/workspace/scripts/speak-local-queued.sh "Queue smoke test"
+scripts/speak-local-queued.sh "Queue smoke test"
 ```
 Then monitor worker log for dequeue/synth/playback completion.
 

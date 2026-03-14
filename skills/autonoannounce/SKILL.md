@@ -1,9 +1,15 @@
 ---
 name: autonoannounce
-description: Build, operate, and troubleshoot Autonoannounce local speaker text-to-speech using the queued pipeline (enqueue to worker to ElevenLabs to playback backend). Use when creating or improving low-latency fire-and-forget TTS flows, tuning burst behavior, validating queue performance, enforcing local-only speech policy, or debugging queue/worker playback failures.
+description: Build, operate, and troubleshoot Autonoannounce local speaker text-to-speech using the queued pipeline (enqueue to worker to ElevenLabs to playback backend). Requires ELEVENLABS_API_KEY for network synthesis, with optional ELEVENLABS_VOICE_ID and ELEVENLABS_MODEL_ID for voice/model selection. Use when creating or improving low-latency fire-and-forget TTS flows, tuning burst behavior, validating queue performance, enforcing local-only speech policy, or debugging queue/worker playback failures.
 ---
 
 # Local TTS Queue
+
+## Requirements
+- Required credential: `ELEVENLABS_API_KEY`
+- Recommended env vars: `ELEVENLABS_VOICE_ID`, `ELEVENLABS_MODEL_ID`
+- Runtime tools: `python3`, `curl`, and one local playback backend (`mpv`, `ffplay`, `afplay`, `paplay`, or PowerShell sound player)
+- Network destination for synthesis/preflight: `https://api.elevenlabs.io`
 
 ## Overview
 Use this skill to keep local speech fast, reliable, and policy-compliant by treating enqueue as fire-and-forget and isolating synthesis/playback inside the queue worker.
