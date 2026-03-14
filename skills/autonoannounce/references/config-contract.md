@@ -1,7 +1,7 @@
 # Local TTS Queue Config Contract
 
 Primary config file (current environment):
-- `/home/brad/.openclaw/workspace/config/tts-queue.json`
+- `config/tts-queue.json`
 
 ## Required keys
 - `queuePath`: JSONL queue file path
